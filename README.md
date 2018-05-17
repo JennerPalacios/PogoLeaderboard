@@ -15,6 +15,8 @@ const Emojis=require('/Emojis.js');
 const emojis = new Emojis.DiscordEmojis();
 const leaderboard = new Leaderboard.Leaderboard('insert path/file name here');
 
+emojis.Load(bot); - should be called in your bot.on('ready') block, the bot will search all servers for the needed Emojis.  If you join the server with the above link you will have them all there.
+
 
 functions:
 
